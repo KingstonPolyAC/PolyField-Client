@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add any global custom styles below the Tailwind directives if needed */
+/* For example: */
+/*
+body {
+  font-family: 'YourChosenFont', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+
+/* Ensure the app takes up full height if you have fixed headers/footers */
+/* html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* To prevent body scroll if app manages its own scroll */
+/* } */
+
+/*
+  The overflow-hidden on html/body is often handled by the Wails setup
+  or specific classes on your root div in App.jsx, so the above
+  html, body, #root styling might not be strictly necessary depending on your setup.
+  The Tailwind directives are the most crucial part.
+*/

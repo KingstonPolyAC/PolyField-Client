@@ -1,0 +1,30 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "PolyField Full",
+  "outputfilename": "PolyField-Fullv0.0.1-alpha",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Gordon L",
+    "email": "web@kingstonandpoly.org"
+  },
+  "frontend": {
+    "dir": "frontend",
+    "install": "npm install",
+    "build": "npm run build",
+    "dev": {
+      "command": "npm run dev",
+      "port": 5173,
+      "env": {
+        "VITE_DEV_SERVER_HOST": "localhost"
+      }
+    }
+  },
+  "windows": {
+    "webview2": "embed",
+    "wailsjsdir": "./wailsjs",
+    "console": false
+  }
+}
